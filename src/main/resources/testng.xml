@@ -5,12 +5,12 @@
 <listeners>
 	<listener
 		class-name="com.ExtentReportListener.ExtentReporterNG" />
-		<listener class-name="listner.AllTransformer" />
+		
 </listeners>
 
 	<test name="Free ebay App Test Cases">
 		<packages>
-			<package name="tests.*"/>
+			<package name="com.tests.*"/>
 		</packages>
 	</test>
 	
