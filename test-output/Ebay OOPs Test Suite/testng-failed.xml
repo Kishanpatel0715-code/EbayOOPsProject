@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="3" name="Failed suite [Ebay OOPs Test Suite]" parallel="tests">
+  <listeners>
+    <listener class-name="com.ExtentReportListener.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" verbose="3" name="my ebay test chrome(failed)" parallel="methods">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.tests.HomePageTest">
+        <methods>
+          <include name="verifySellLinkTest"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.tests.HomePageTest -->
+    </classes>
+  </test> <!-- my ebay test chrome(failed) -->
+</suite> <!-- Failed suite [Ebay OOPs Test Suite] -->
