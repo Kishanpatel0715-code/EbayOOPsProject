@@ -9,6 +9,7 @@
 </listeners>
 
 	<test name="Free ebay App Test Cases">
+	<parameter name="browser" value="chrome"/>
 		<packages>
 			<package name="com.tests.*"/>
 		</packages>
